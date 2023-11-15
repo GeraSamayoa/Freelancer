@@ -4,49 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Disenador Freelancer</title>
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <h1>Gera Samayoa Freelancer</h1>
+      <h1 class="titulo">Gera Samayoa <span>Freelancer</span></h1>
     </header>
-
-    <nav>
+    <div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
       <a href="#">Inicio</a>
       <a href="#">Sobre Mi</a>
-      <a href="#">Clintes</a>
+      <a href="#">Clientes</a>
       <a href="#">Contacto</a>
     </nav>
-
-    <section>
-      <h2>Diseno y Desarrollo Web Freelancer</h2>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="icon icon-tabler icon-tabler-map-pin"
-        width="88"
-        height="88"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="#FFC107"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-        <path
-          d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-        />
-      </svg>
-      <p>Barberena, Santa Rosa</p>
-      <a href="#">Contactar</a>
+</div>
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Diseno y Desarrollo Web Freelancer</h2>
+        <div class="ubicacion">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-map-pin"
+              width="88"
+              height="88"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#FFC107"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              <path
+                d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+              />
+            </svg>
+            <p>Barberena, Santa Rosa</p>
+        </div>
+            <a class="boton" href="#">Contactar</a>
+        </div> <!--.contenido-hero-->
     </section>
 
-    <main>
+    <main class="contenedor sombra">
       <h2>Mis Servicios</h2>
 
-      <section>
+      <div class="servicios">
+      <section class="servicio">
         <h3>Diseno Web</h3>
+        <div class="iconos">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-palette"
@@ -67,14 +82,16 @@
           <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
           <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
         </svg>
+      </div>
         <p>
           Aenean porta scelerisque tincidunt. Quisque facilisis ultrices
           venenatis. Pellentesque blandit, nulla et feugiat aliquam.
         </p>
       </section>
 
-      <section>
+      <section class="servicio">
         <h3>Aplicaciones Web</h3>
+        <div class="iconos">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-android"
@@ -116,14 +133,16 @@
           />
           <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
         </svg>
+      </div>
         <p>
           Aenean porta scelerisque tincidunt. Quisque facilisis ultrices
           venenatis. Pellentesque blandit, nulla et feugiat aliquam.
         </p>
       </section>
 
-      <section>
+      <section class="servicio">
         <h3>E-Commerce</h3>
+        <div class="iconos">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-credit-card"
@@ -144,42 +163,45 @@
           <path d="M7 15l.01 0" />
           <path d="M11 15l2 0" />
         </svg>
+      </div>
         <p>
           Aenean porta scelerisque tincidunt. Quisque facilisis ultrices
           venenatis. Pellentesque blandit, nulla et feugiat aliquam.
         </p>
       </section>
-    </main>
+        </div> <!--.servicios-->
+  
 
     <section>
       <h2>Contacto</h2>
-      <form>
-        <fieldset>
-            <legend>Contactanos llenando todos los campos</legend>
-            <div>
-                <label>Nombre</label>
-                <input type="text" placeholder="Tu Nombre">
-            </div>
-            <div>
-                <label>Telefono</label>
-                <input type="tel" placeholder="Tu Telefono">
-            </div>
-            <div>
-                <label>Correo</label>
-                <input type="email" placeholder="Tu Email">
-            </div>
-            <div>
-                <label>Mensaje</label>
-                <textarea></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
+      <form class="formulario">
+         <fieldset>
+          <div class="contenedor-campos">
+          <div class="campo">
+            <label>Nombre</label>
+            <input class= "input-text" type="text" placeholder="Tu Nombre" />
+          </div>
+          <div class="campo">
+            <label>Telefono</label>
+            <input class= "input-text" type="tel" placeholder="Tu Telefono" />
+          </div>
+          <div class="campo">
+            <label>Correo</label>
+            <input class="input-text" type="email" placeholder="Tu Email" />
+          </div>
+          <div class="campo">
+            <label>Mensaje</label>
+            <textarea class="input-text"></textarea>
+          </div>
+        </div> <!--.contenedor-campos-->
+          <div class="alinear-derecha flex">
+            <input class="boton w-sm-100" type="submit" value="Enviar" />
+          </div>
         </fieldset>
       </form>
     </section>
-
-    <footer>
+  </main>
+    <footer class="footer">
       <p>Todos los derechos reservados. Gera Samayoa Freelancer</p>
     </footer>
   </body>
